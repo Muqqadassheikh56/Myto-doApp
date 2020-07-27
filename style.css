@@ -20,12 +20,25 @@ body{
     }
 }
 h2{
-    text-align: center;
-    color: white;
-    font-size: 40px;
-    text-decoration: underline
+  text-align: center;
+   color: white; 
+   font-weight: bold;
+    font-size: 50px;
+    animation-name: slide;
+    animation-duration: 3s;
+    text-shadow: 4px 4px #FF0000;
+
 }
-    
+@keyframes slide{
+    0%{
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 ol { 
     margin: 0;
     padding: 0
